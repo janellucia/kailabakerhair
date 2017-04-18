@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="main">
+<div class="main" id="main" tabindex="-1">
 	<div class="container">
 
 		<div class="content">

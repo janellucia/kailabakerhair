@@ -1,3 +1,48 @@
 footer {
 	clear: both;
 }
+
+.footer-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 95%;
+	margin: 0 auto;
+	@include responsive-font(1vw, 10px, 16px);
+	.footer{
+
+	}
+	.credit{
+		text-align: right;
+		a{
+			text-decoration:none;
+		}
+	}
+}
+
+.contact{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	.email-contact{
+		@include responsive-font(1.5vw, 14px, 22px);
+	}
+	.social-bar{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		a{
+			border: 1px solid black;
+			border-radius: 50%;
+			height: 40px;
+			width: 40px;
+			margin: 5px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			i{
+				@include responsive-font(1.5vw, 14px, 22px);
+			}
+		}
+	}
+}

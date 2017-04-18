@@ -1,0 +1,85 @@
+.row{
+	margin: -10px 0 0 0;
+	.each-post{
+		width: 100%;
+		margin: 10px 0;
+	}
+}
+	.portfolio-photo{
+		width: 100%;
+		height: 100%;
+		img{
+			width: 100%;
+			height: auto;
+
+		}
+		.portfolio-content{
+			display: none;
+		}
+	}
+	// .portfolio-photo:hover{
+	// 	.portfolio-content{
+	// 		display: block;
+	// 		background: rgba(white, 0.8);
+	// 		position: relative;
+	// 		height: 100%;
+	// 		width: 100%;
+	// 		color: grey;
+	// 		h3{
+	// 			display: none;
+	// 		}
+	// 		.box{
+	// 			width: 80%;
+	// 			margin: 0 auto;
+	// 			p{
+	// 				img{
+	// 				width: 100%;
+	// 				margin-top: 25px;
+	// 				height: 500px;
+	// 				opacity: 1;
+	// 				}
+	// 				.title{
+	// 					display: none;
+	// 				}
+	// 			}
+				
+	// 		}
+	// 	}
+	// }
+
+// All Media Queries
+
+// Landscape phones and tablet
+@media (max-width: 767px) {
+	// turn off wrapper padding
+	.row{
+		margin: -10px 0 0 0;
+		.each-post{
+			width: 100%;
+			padding: 0;
+		}
+	}
+	.portfolio-photo:hover{
+		.portfolio-content{
+			h3{
+			}
+			.box{
+
+				p{
+					img{
+
+					}
+
+				}
+				
+			}
+		}
+	}
+	
+    
+}
+ 
+// Landscape phones and down
+@media (max-width: 480px) {
+ 
+}

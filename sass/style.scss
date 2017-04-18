@@ -1,18 +1,23 @@
 /*!
-* Theme Name: HackerYou Starter Theme
-* Theme URI: http://hackeryou.com;
-* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Theme Name: Kaila Baker
+* Theme URI: http://kailabaker.com;
+* Description: Portfolio Theme for Kaila Baker (Hairstylist).
 * Version: 1.0
-* Author: HackerYou
-* Author URI: http://hackeryou.com
+* Author: Janel Lucia
+* Author URI: http://janellucia.com
 */
 
 @import 'normalize';
+@import 'variables';
 @import 'typography';
-@import 'navigation';
+@import 'responsiveFont';
+@import 'animate';
 @import 'sidebar';
 @import 'comments';
+@import 'header';
 @import 'footer';
+@import 'front-page';
+@import 'about-page';
 /*
 ====================================
 Default Styling
@@ -23,11 +28,30 @@ img {
 	max-width: 100%;
 }
 
+@font-face {
+// font-family: 'UniversLight-Bold', sans-serif;
+font-family: 'covielle-zero-webfont';
+font-style: normal;
+font-weight: normal;
+// src: url('UniversLight-Bold.ttf') format('truetype');
+src: url('covielle-zero-webfont.woff') format('woff');
+}
+
+
+
 body {
-	color: #333;
+	background: -webkit-gradient(linear, right top, left bottom, color-stop(0, #FDAEE1), color-stop(0.54, #FFFCD1));
+	background: -o-linear-gradient(left bottom, #FDAEE1 0%, #FFFCD1 54%);
+	background: -moz-linear-gradient(left bottom, #FDAEE1 0%, #FFFCD1 54%);
+	background: -webkit-linear-gradient(left bottom, #FDAEE1 0%, #FFFCD1 54%);
+	background: -ms-linear-gradient(left bottom, #FDAEE1 0%, #FFFCD1 54%);
+	background: linear-gradient(to left bottom, #FDAEE1 0%, #FFFCD1 54%);
+	color: black;
+	font-family: 'covielle-zero-webfont';
 }
 
 .container {
+	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -42,7 +66,57 @@ body {
 	width: 100%;
 }
 
+//page loader styles
 
+.js div#preloader { 
+	position: fixed; 
+	left: 0; top: 0; 
+	z-index: 999; 
+	width: 100%; 
+	height: 100%; 
+	overflow: visible; 
+	background: black url('./images/loading.gif') no-repeat center; 
+}
+
+
+.gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html .gfieldset ul li{
+list-style-type: none !important;
+}
+
+
+//skip to content
+  a.hidden {
+    position: absolute;
+    left: -999px;
+  }
+    a.hidden:focus { 
+    left: 5px;
+  }
+
+
+
+// All Media Queries
+
+// Landscape phones and tablet
+@media (max-width: 767px) {
+	// turn off wrapper margin 
+	.container{
+		width: 95%;
+	}
+	.content{
+		width: 100%;
+	}
+	.sidebar{
+		display: none;
+	}
+	
+    
+}
+ 
+// Landscape phones and down
+@media (max-width: 480px) {
+ 
+}
 
 
 
